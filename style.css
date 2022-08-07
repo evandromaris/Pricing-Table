@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+ body{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+ }
+
+header{
+    width: 100vw;
+    height: 50vh;
+    background-color: #1D539E;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+section{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section h1{
+    font-size: 3em;
+}
+section p{
+    font-size: 1.1em;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    column-gap: 40px;
+    bottom: 130px;
+}
+
+main .free, main .professional, main .basic{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px  #828799;
+    width: 355px;
+    height: 470px;
+}
+
+main .basic{
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    box-sizing: border-box;
+}
+
+main .basic .top-basic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFCC29;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    color: #1D539E;
+}
+
+main .basic .top-basic button{
+    width: 95px;
+    height: 32px;
+    background-color: #1D539E;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main .basic .content{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    color:#1E2338;
+}
+
+main .basic .valor{
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+
+main .basic .content .itens ul li {
+    font-size: 1rem;
+
+}
+
+main .free, main .professional{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 30px;
+    box-sizing: border-box;
+    color:#1E2338;
+}
+
+
+main .free .valor, main .professional .valor {
+    display: flex;
+    align-items:center;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+main .free .valor p:last-child, main .basic .valor p:last-child, main .professional .valor p:last-child{
+    color: #828799;
+}
+
+main .free .valor p:nth-child(1), main .basic .valor p:nth-child(1), main .professional .valor p:nth-child(1){
+    font-size: 2em;
+    font-weight: 700;
+}
+
+main .free .valor p:nth-child(2), main .basic .valor p:nth-child(2), main .professional .valor p:nth-child(2) {
+    font-weight: 700;
+}
+
+
+main .free .text1, main .basic .content .text1, main .professional .text1{
+    margin-top: 20px;
+    font-size: .8rem;
+    color: #828799;
+}
+
+main .free hr, main .basic .content hr, main .professional hr{
+    border: 0;
+    border-top: 1px solid #EEEEEE;
+    margin-top: 20px;
+}
+
+ul{
+    margin-top: 20px;
+    list-style: none;
+}
+
+ul li{
+    display: flex;
+    margin-top: 5px;
+    font-size: .8em;
+    color: #828799;
+    font-weight: 600;
+    gap: 10px;
+    align-items: center;
+}
+
+main .free .botao{
+    position: relative;
+    top: 130px;
+} 
+
+main .basic .content .botao button{
+    position: relative;
+    top: 100px;
+    background-color: #1D539E;
+    width: 100%;
+    height: 51px;
+    border: 1px solid #1D539E;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;   
+} 
+
+main .professional .botao { 
+    position: relative;
+    top: 85px;
+}
+
+main .free .botao button, main .professional .botao button {
+    width: 100%;
+    height: 49px;
+    background-color: #fff;
+    border: 1px solid #1D539E;
+    color: #1D539E;
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer; 
+}
+
+footer{
+    position: relative;
+    bottom: 80px;
+    font-size: .8em;
+}
+
+@media (max-width: 1050px){
+    body{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header section{
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        position: initial;
+        align-items: center;
+        margin: 0 auto;
+        gap: 20px;
+
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+}
